@@ -14,7 +14,6 @@ public class EmpregadoComissionado extends empregado{
         super(nome, cpf, valorSalarioBase, valorImpostos);
         this.valorProdutosVendidos = valorProdutosVendidos;
         this.percentualComissao = percentualComissao;
-       //this.valorComissao
     }
       private double getComissao(double valorProdutosVendidos,
                                  double percentualComissao) {
@@ -25,12 +24,16 @@ public class EmpregadoComissionado extends empregado{
         return valorSalarioBase - valorImpostos;
       }
 
-      public double ValorSalarioBase() {
+    public double ValorSalarioBase() {
         return ValorSalarioBase;
-      }
+    }
 
 
     public double calculaValorTotalSalario() {
         return getValorTotalSalarioBase() + valorComissao - getValorImpostos();
+    }
+
+    public double getValorTotalSalarioBase(empregado.valorSalarioBase) {
+
     }
 }

@@ -16,7 +16,7 @@ public class mainexer6 {
                 "20",
                 "500",
                 "10");
-        double salarioComisionado = comissionado.calculaValorTotalSalario();
+        double salarioComisionado = EmpregadoComissionado.calculaValorTotalSalario();
         System.out.println("Salário comissionado: " + salarioComisionado);
 
 
